@@ -1,0 +1,475 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+
+
+#section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 800px;
+    position: relative;
+    height: 90vh;
+    
+}
+
+
+
+#section1 h1 {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    padding: 30px;
+    font-size: 40px;
+    text-align: end;
+    font-weight: 500;
+}
+
+#section1 .circle {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 150px;
+    width: 150px;
+    border-radius: 100%;
+    background-color: #3a4998;
+}
+
+
+#section1 .circle2 {
+    height: 100px;
+    width: 100px;
+    border: 20px solid #e5bb8d;
+    border-radius: 100%;
+    position: absolute;
+    bottom: 0px;
+    left: 160px;
+}
+
+
+.txt {
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 15px;
+    padding: 40px;
+    color: #111111;
+    font-family: 'Open Sans', sans-serif;
+    width: 350px;
+    height: 320px;
+    background-color: #f2f2f2;
+    position: relative;
+    right: 30px;
+    bottom: -100px;
+}
+
+
+.txt button {
+
+    text-transform: uppercase;
+    font-size: 0.875rem;
+    letter-spacing: 1px;
+    background-image: none;
+    border-style: none;
+    margin: 22px auto 0 0;
+    color: #ffffff;
+    background-color: #3a4998;
+    padding: 11px 44px 11px 42px;
+}
+
+
+.imgs {
+    height: 400px;
+    width: 550px;
+    position: relative;
+
+    display: flex;
+    align-items: end;
+    justify-content: end;
+
+}
+
+
+
+.pic1 {
+    background-image: url(fffff.jpg);
+    height: 380px;
+    width: 370px;
+    background-size: cover;
+    border-radius: 100%;
+    background-position: center;
+
+}
+
+.pic2 {
+    background-image: url(close-up-guy-holding-controller_23-2148243619.jpg);
+    width: 200px;
+    height: 200px;
+    background-size: cover;
+    border-radius: 100%;
+    border: 10px solid white;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+}
+
+
+
+.txt h5 {
+    font-size: 20px;
+}
+
+
+.txt p {
+    font-size: 14px;
+    font-weight: 300;
+}
+
+
+.txt span {
+    font-size: smaller;
+    font-style: italic;
+}
+
+
+@media(max-width:800px) {
+
+    #section1 h1 {
+        font-size: 47px;
+        top: 0;
+        font-weight: 400;
+        padding: 0;
+    }
+
+    #section1 {
+        width: 660px;
+        justify-content: center;
+    }
+
+    #section1 .circle {
+
+        height: 120px;
+        width: 120px;
+        top: 30px;
+        left: 60px;
+
+    }
+
+
+    #section1 .circle2 {
+        height: 80px;
+        width: 80px;
+        bottom: 0;
+        border: 14px solid #e5bb8d;
+
+    }
+
+
+
+    .imgs {
+        left: 80px;
+        align-items: center;
+        height: 480px;
+    }
+
+
+    .txt {
+        width: 450px;
+        right: 0px;
+        height: 280px;
+        bottom: -170px;
+        gap: 25px;
+        padding: 25px;
+    }
+
+
+    .txt h5 {
+        font-size: 18px;
+
+    }
+
+
+    .txt p {
+        font-size: 13px;
+    }
+
+
+
+
+
+    .pic2 {
+        width: 170px;
+        height: 170px;
+        bottom: 0;
+        left: 0px;
+    }
+
+}
+
+
+@media(max-width:660px) {
+
+    #section1 h1 {
+        font-size: 40px;
+        top: 0;
+        font-weight: 400;
+        padding: 0;
+        right: 55px;
+    }
+
+    #section1 {
+        width: 510px;
+        height: 100vh;
+        justify-content: center;
+    }
+
+
+
+
+    .pic1 {
+
+        height: 300px;
+        width: 300px;
+
+    }
+
+    .pic2 {
+        width: 140px;
+        height: 140px;
+        background-position: center;
+
+
+    }
+
+    .txt {
+        height: 250px;
+        width: 400px;
+        gap: 17px;
+        padding: 15px;
+        bottom: -180px;
+        right: 65px;
+    }
+
+
+    .imgs {
+
+        height: 330px;
+        align-items: center;
+        left: 70px;
+
+    }
+
+    #section1 .circle {
+
+
+        top: 80px;
+        left: 70px;
+
+    }
+
+    #section1 .circle2 {
+        bottom: 70px;
+        left: 130px;
+    }
+
+    .txt h5 {
+        font-size: 13px;
+
+    }
+
+
+    .txt p {
+        font-size: 10px;
+    }
+
+    .txt span {
+        font-size: 10px;
+    }
+
+    .txt button {
+
+
+        font-size: 11px;
+        padding: 10px 15px;
+    }
+
+
+}
+
+
+
+@media(max-width:520px) {
+
+    #section1 h1 {
+        font-size: 30px;
+        right: 0;
+    }
+
+    #section1 {
+        width: 388px;
+        height: 120vh;
+        gap: 100px;
+        flex-direction: column;
+    }
+
+
+    main {
+        height: 140vh;
+    }
+
+    .txt {
+
+        height: 300px;
+        width: 300px;
+        gap: 30px;
+        bottom: 0px;
+        right: 0px;
+    }
+
+
+
+    .imgs {
+        height: 500px;
+        width: 350px;
+        align-items: center;
+        left: 0;
+        padding-top: 100px;
+
+
+    }
+
+    #section1 .circle2 {
+        bottom: 320px;
+        left: 220px;
+    }
+
+    #section1 .circle {
+
+
+        top: 60px;
+        left: 40px;
+    }
+
+
+    .txt h5 {
+        font-size: 20px;
+
+    }
+
+
+    .txt p {
+        font-size: 14px;
+    }
+
+    .txt span {
+        font-size: 12px;
+    }
+
+
+}
+
+
+@media(max-width:380px) {
+    #section1 h1 {
+        font-size: 20px;
+
+    }
+
+    #section1 {
+        width: 280px;
+        height: 100vh;
+        gap: 100px;
+      justify-content: space-around;
+    }
+
+
+
+
+    #section1 .circle2 {
+
+        bottom: 230px;
+        left: 160px;
+        height: 60px;
+        width: 60px;
+    }
+
+    #section1 .circle {
+        height: 100px;
+        width: 100px;
+
+        top: 40px;
+        left: 40px;
+    }
+
+
+
+ 
+
+
+    .imgs {
+        height: 400px;
+        width: 260px;
+        left: 0;
+        
+    justify-content: center;
+
+    }
+
+
+    .pic1 {
+       
+        height: 220px;
+        width: 220px;
+
+    }
+
+    .pic2 {
+        width: 100px;
+        height: 100px;
+      
+
+
+    }
+
+
+    .txt{
+        height: 200px;
+        gap: 20px;
+        width: 240px;
+    }
+
+.txt h5 {
+    font-size: 13px;
+
+}
+
+
+.txt p {
+    font-size: 8px;
+}
+
+.txt span {
+    font-size: 7px;
+}
+
+
+.txt button {
+
+
+    font-size: 8px;
+    padding: 7px 9px;
+}
+
+}
